@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Examples</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            line-height: 100px;
+        }
+        .static-box {
+            position: static;
+          
+            margin-left: 300px;
+            background-color: blue;
+        }
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 20px;
+            background-color: green;
+        }
+        .absolute-box {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            background-color: red;
+        }
+        .fixed-box {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: purple;
+        }
+        .sticky-box {
+            position: sticky;
+            top: 0;
+            background-color: orange;
+        }
+        .container {
+            height: 200px;
+            background-color: lightgrey;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box static-box">Static</div>
+<div class="box relative-box">Relative</div>
+
+<div class="container">
+    <div class="box sticky-box">Sticky</div>
+    <p>Scroll down to see the sticky behavior.</p>
+    <p>Some more content here to enable scrolling...</p>
+    <p>Some more content here to enable scrolling...</p>
+    <p>Some more content here to enable scrolling...</p>
+    <p>Some more content here to enable scrolling...</p>
+</div>
+
+<div class="box absolute-box">Absolute</div>
+<div class="box fixed-box">Fixed</div>
+
+</body>
+</html>
